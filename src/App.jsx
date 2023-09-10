@@ -1,9 +1,13 @@
-
+import Home from './pages/Home';
+import Canvas from './canvas/index';
+import Customize from './pages/Customize'
 function App() {
   return (
-    <>
-      <h1>3d-MockUp</h1>
-    </>
+    <main className='app transition-all ease-in-out'>
+      <Home/>
+      <Canvas/>
+      <Customize/>
+    </main>
   )
 }
 
