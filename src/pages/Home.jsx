@@ -3,7 +3,7 @@ import { useSnapshot } from 'valtio'
 import state from '../store'
 import{
 headContainerAnimation,
-headtContentAnimation,
+headContentAnimation,
 headTextAnimation,
 slideAnimation
 }
@@ -11,7 +11,7 @@ from '../config/motion';
 
 const Home = () => {
   const snap = useSnapshot(state);
-  
+
   return (
     <div>Home</div>
   )
