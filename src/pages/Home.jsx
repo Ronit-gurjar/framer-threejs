@@ -9,6 +9,8 @@ slideAnimation
 }
 from '../config/motion';
 
+import { CustomButton } from '../components';
+
 const Home = () => {
   const snap = useSnapshot(state);
 
@@ -28,7 +30,12 @@ const Home = () => {
               <p className='max-w-md'>A <strong>COMMUNITY</strong> driven Platform to create amazing 3d mockups.
                It's free, Consisting of Various 3d modals for you to select from.</p>
             </motion.div>
-            
+            <CustomButton
+              type="filled"
+              title="Create Mockup"
+              handleClick={() => state.intro = false}
+              customStyles="w-fit px-4 py-2.5 font-bold text-sm"
+            />
           </motion.div>
 
         </motion.section>
