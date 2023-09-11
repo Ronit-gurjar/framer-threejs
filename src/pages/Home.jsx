@@ -13,7 +13,15 @@ const Home = () => {
   const snap = useSnapshot(state);
 
   return (
-    <div>Home</div>
+    <AnimatePresence>
+      {snap.intro && (
+        <motion.section className='home' {...slideAnimation('left')}>
+          <motion.header>
+            <img src='./logo-black.png' alt='logo' className='w-25 h-25 object-contain'/>
+          </motion.header>
+        </motion.section>
+      )}
+    </AnimatePresence>
   )
 }
 
