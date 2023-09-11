@@ -14,8 +14,8 @@ const CanvasModel = () => {
 
        {/* Create a directional light */}
        <directionalLight
-        position={[0, 10, 0]}
-        intensity={1}
+        position={[10, 5, 0]} //use dragger to let user customize
+        intensity={0.5} //use dragger to let user customize
         castShadow={true}
         shadow-mapSize-width={1024}
         shadow-mapSize-height={1024}
