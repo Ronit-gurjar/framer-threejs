@@ -7,7 +7,15 @@ import Backdrop from './Backdrop';
 
 const CanvasModel = () => {
   return (
-    <div>CanvasModel</div>
+    <Canvas>
+      <ambientLight intensity={0.7}/>
+      <CameraRig>
+        
+          <Center>
+            <Model/>
+          </Center>
+      </CameraRig>
+    </Canvas>
   )
 }
 
