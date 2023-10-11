@@ -1,2 +1,2 @@
-# 3d-MockUp
-A free platform to create 3d Mockups.
+# framer-threejs
+learning framer motion and threejs
